@@ -1,0 +1,58 @@
+
+#tituloGale{
+    text-align: center;
+}
+
+
+img{
+    width: 100%;
+    display: block;
+
+}
+.containerGaleria{
+  width: 90vw;
+  max-width: 1200px;
+  margin: 20px auto;
+  align-items: center;
+  
+   
+}
+
+.containerFotox{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  height: 150px;
+  
+    
+   
+}
+
+.containerFotox img{
+  
+    width: 100%;
+    height: 100%;
+}
+
+
+@media(min-width: 768px){
+
+.containerGaleria{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        align-items: start;
+        justify-content: space-between;
+}
+
+.containerFotox{
+    width: 90%;
+        height: 220px;
+}
+
+.containerFotox img{
+    width: 90%;
+}
+}
